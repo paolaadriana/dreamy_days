@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Nombre de la especialidad -->
+    <TextView
+        android:id="@+id/especialidadNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Ícono de flecha más pequeño -->
+    <ImageView
+        android:id="@+id/flechaImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

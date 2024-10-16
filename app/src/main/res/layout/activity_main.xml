@@ -1,38 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background5"
+    android:padding="16dp">
 
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+
+    <!-- Título de la aplicación -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="176dp" />
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
 
-    <EditText
-        android:id="@+id/editTextText"
+    <!-- Label de usuario -->
+    <TextView
+        android:id="@+id/labelUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User:"
+        android:textColor="#780000"
+        android:textStyle="bold"
+        android:paddingTop="8dp" />
+
+    <!-- Campo de texto para usuario con icono -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="100dp" />
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="4dp">
 
-    <Button
-        android:id="@+id/button"
+        <EditText
+            android:id="@+id/usuarioEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="User"
+            android:background="@android:color/transparent"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/iconUser"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_user"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <!-- Label de contraseña -->
+    <TextView
+        android:id="@+id/labelContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textColor="#780000"
+        android:textStyle="bold"
+        android:paddingTop="16dp" />
+
+    <!-- Campo de texto para contraseña con el ícono de ojo -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        tools:layout_editor_absoluteX="73dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/contraseñaEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/iconEye"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_eye"
+        android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/ingresarButton"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:backgroundTint="#003049"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/crearUsuarioButton"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:backgroundTint="#003049"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

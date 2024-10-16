@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Otros colores -->
+    <color name="colorVerduras">#4CAF50</color>
+    <color name="colorFrutas">#FFEB3B</color>
+    <color name="colorAzul">#003049</color>
 </resources>

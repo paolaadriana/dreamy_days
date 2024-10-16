@@ -1,3 +1,12 @@
+
 <resources>
-    <string name="app_name">apppractica</string>
+<string name="app_name">apppractica</string>
+<string-array name="categorias_array">
+    <item>Verduras</item>
+    <item>Frutas</item>
+</string-array>
+    <string-array name="temporadas_array">
+        <item>Primavera</item>
+        <item>Invierno</item>
+    </string-array>
 </resources>
